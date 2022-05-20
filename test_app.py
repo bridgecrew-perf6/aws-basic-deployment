@@ -8,7 +8,7 @@ if __name__ == "__main__":
     r = st.number_input("Yearly Interest Rate", min_value=0.5, step=0.1)
     t = st.slider("I want to invest for (in years)", min_value=1,max_value=10)
     if st.button("Calculate"):
-        if f == "Monthly":
+        if f == "Monthly SIP":
             r = r/1200
             t = t*12
             total = p*(1+r)*((1+r)**t - 1)/r
